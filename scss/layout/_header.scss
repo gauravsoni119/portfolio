@@ -6,7 +6,7 @@
         to right bottom,
         rgba($color-primary, 0.8),
         rgba($color-gray-light, 0.8)),
-        url('../../img/portfolio-bg.jpg');
+        url('../img/portfolio-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

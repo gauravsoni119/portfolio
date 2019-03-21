@@ -9,7 +9,7 @@
         to right bottom,
         rgba($color-primary, .8),
         rgba($color-primary-light, .8)),
-        url('../../img//features-bg.jpg');
+        url('../img//features-bg.jpg');
     background-size: cover;
     padding: 20rem 0;
     transform: skewY(-7deg);
@@ -33,7 +33,7 @@
                         rgba($white, .2) 0%,
                         rgba($white, .5) 50%,
                         $color-primary 100%),
-                        url('../../img/registration.jpg');
+                        url('../img/registration.jpg');
     background-size: cover;
     padding: 20rem 0;
     clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);

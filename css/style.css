@@ -147,7 +147,7 @@ body {
   height: 100vh;
   background: #eef0f5;
   padding: 3rem;
-  background-image: linear-gradient(to right bottom, rgba(99, 98, 206, 0.8), rgba(238, 240, 245, 0.8)), url("../../img/portfolio-bg.jpg");
+  background-image: linear-gradient(to right bottom, rgba(99, 98, 206, 0.8), rgba(238, 240, 245, 0.8)), url("../img/portfolio-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -362,13 +362,13 @@ body {
     background-size: cover;
     background-blend-mode: hue; }
     .card__picture--p1 {
-      background-image: linear-gradient(to right bottom, rgba(203, 211, 242, 0.8), rgba(99, 98, 206, 0.8)), url("../../img/design-course.jpg");
+      background-image: linear-gradient(to right bottom, rgba(203, 211, 242, 0.8), rgba(99, 98, 206, 0.8)), url("../img/design-course.jpg");
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--p2 {
-      background-image: linear-gradient(to right bottom, rgba(238, 240, 245, 0.8), rgba(43, 45, 66, 0.8)), url("../../img/photography-course.jpg");
+      background-image: linear-gradient(to right bottom, rgba(238, 240, 245, 0.8), rgba(43, 45, 66, 0.8)), url("../img/photography-course.jpg");
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--p3 {
-      background-image: linear-gradient(to right bottom, rgba(242, 201, 238, 0.8), rgba(249, 0, 99, 0.8)), url("../../img/development-course.jpg");
+      background-image: linear-gradient(to right bottom, rgba(242, 201, 238, 0.8), rgba(249, 0, 99, 0.8)), url("../img/development-course.jpg");
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .card__heading {
     position: absolute;
@@ -499,7 +499,7 @@ body {
   background-color: #eef0f5; }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(99, 98, 206, 0.8), rgba(203, 211, 242, 0.8)), url("../../img//features-bg.jpg");
+  background-image: linear-gradient(to right bottom, rgba(99, 98, 206, 0.8), rgba(203, 211, 242, 0.8)), url("../img//features-bg.jpg");
   background-size: cover;
   padding: 20rem 0;
   transform: skewY(-7deg);
@@ -515,7 +515,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 150vh, 0 100%); }
 
 .section-registration {
-  background-image: linear-gradient(-75deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 50%, #6362ce 100%), url("../../img/registration.jpg");
+  background-image: linear-gradient(-75deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 50%, #6362ce 100%), url("../img/registration.jpg");
   background-size: cover;
   padding: 20rem 0;
   clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
