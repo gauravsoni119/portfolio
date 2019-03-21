@@ -1,0 +1,176 @@
+.card {
+    height: 52rem;
+    position: relative;
+    perspective: 150rem;
+    -webkit-perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__side {
+        position: absolute;
+        height: 52rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: .3rem;
+        transition: all .8s ease;
+        box-shadow: 0 1.5rem 4rem rgba($black,.15);
+        
+        &--front {
+            background-color: $white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary
+                );
+            }
+
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-gray-light,
+                    $color-gray-dark
+                );
+            }
+
+            &-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary
+                );
+            }
+        }
+    }
+
+    &__picture {
+        height: 23rem;
+        background-size: cover;
+        background-blend-mode: hue;
+
+        &--p1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, .8),
+                rgba($color-primary, .8)),
+                url('../../img/design-course.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        &--p2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-gray-light, .8),
+                rgba($color-gray-dark, .8)),
+                url('../../img/photography-course.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        &--p3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, .8),
+                rgba($color-secondary, .8)),
+                url('../../img/development-course.jpg');
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    }
+
+    &__heading {
+        position: absolute;
+        font-size: 2.8rem;
+        top: 15rem;
+        right: 1rem;
+        text-align: right;
+        width: 75%;
+        text-transform: uppercase;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, .85),
+                rgba($color-primary, .85)
+            );
+        }
+
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-gray-light, .85),
+                rgba($color-gray-dark, .85)
+            );
+        }
+
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, .85),
+                rgba($color-secondary, .85)
+            );
+        }
+    }
+
+
+    &__details {
+        padding: 2.5rem;
+        text-align: center;
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            width: 85%;
+
+            li {
+                font-size: 2rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba($color-gray-light-2, .5);
+                }
+            }
+        }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $white;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: normal;
+    }
+}

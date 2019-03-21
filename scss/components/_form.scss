@@ -1,0 +1,101 @@
+.registration {
+    width: 65%;
+    padding: 0 6rem;
+    margin: 0 auto;
+}
+.form {
+
+    &__group {
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border: none;
+        border-bottom: 3px solid transparent;
+        border-radius: 2px;
+        display: block;
+        width: 100%;
+        background-color: rgba($color-primary, .3);
+        color: $color-primary-light;
+        transition: all .3s;
+
+        &::placeholder {
+            color: $color-primary-light;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 .1rem 2rem rgba($black, .15);
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+
+    &__label {
+        color: $color-gray-dark;
+        font-size: 1.5rem;
+        display: block;
+        margin-left: .5rem;
+        margin-top: .7rem;
+        transition: all .3s;
+    }
+
+    &__checkbox-group {
+        display: inline-block;
+        width: 32.33%;
+    }
+
+    &__checkbox-label {
+        font-size: $default-font-size;
+        cursor: pointer;
+    }
+
+    &__checkbox-button {
+        height: 1.7rem;
+        width: 1.7rem;
+        border-radius: 15px;
+        border: 1.5px solid $color-gray-dark;
+        display: inline-block;
+        vertical-align: text-top;
+        position: relative;
+        &::after {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            opacity: 0;
+            position: absolute;
+            bottom: -6.9px;
+            right: -1.0px;
+            color: $color-gray-dark;
+        }
+    }
+
+    &__checkbox:checked ~ &__checkbox-label &__checkbox-button:after {
+        opacity: 1;
+    }
+
+    &__checkbox:checked ~ &__checkbox-button {
+        opacity: 0;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button-row {
+        text-align: center;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}

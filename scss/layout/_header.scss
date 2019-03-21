@@ -1,0 +1,51 @@
+.header {
+    height: 100vh;
+    background: $color-gray-light;
+    padding: 3rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.8),
+        rgba($color-gray-light, 0.8)),
+        url('../../img/portfolio-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    &__logo {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__text-box {
+        @include center;
+        text-align: center;
+    }
+
+    &__paragraph {
+        display: inline-block;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 3rem;
+    }
+
+    &__icon-scroll {
+        height: 35px;
+        width: 20px;
+        border: 2px solid $color-primary;
+        margin: auto;
+        border-radius: $border-radius-md;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            height: 3px;
+            width: 3px;
+            border-radius: $border-circle;
+            display: inline-block;
+            background-color: $color-secondary;
+            animation: scroll 2s infinite;
+        }
+    }
+}

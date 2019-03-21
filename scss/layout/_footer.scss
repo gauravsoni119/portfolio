@@ -1,0 +1,10 @@
+.footer {
+    padding: 2rem;
+    background-color: $color-gray-dark;
+    
+    &__row {
+        color: $color-gray-light;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
